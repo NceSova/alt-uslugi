@@ -27,6 +27,8 @@ body {
 }
 
 .main-container {
+  background-color: #f9fafb;
+  font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
   display: flex;
   flex: 60;
   flex-direction: column;
@@ -48,11 +50,11 @@ body {
   justify-content: flex-end;
   align-items: stretch;
   & .logo {
+    font-family: Didot, 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', P052, Sylfaen, serif;
     padding: 8px;
     color: white;
     background-color: rgba(0, 0, 0, 0.4);
     display: flex;
-    border: 2px solid red;
     justify-content: center;
     align-items: center;
     font-size: 80px;
@@ -70,5 +72,78 @@ body {
   & p{
     padding: 16px;
     font-size: smaller;
+  }
+}
+
+.main-container .upper{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  box-sizing: border-box;
+  & .main-text-container {
+    max-width: 75ch ;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 32px;
+    & h3 {
+      color: gray;
+    }
+  }
+}
+
+.main-container .downer {
+  & legend {
+    font-weight: 800;
+    margin: 12px 0 12px 0;
+    font-size: 20px;
+  }
+}
+
+form {
+  padding-left: 32px;
+}
+
+.form-container {
+  background-color: white;
+  box-shadow: 5px 5px 5px lightgray;
+}
+
+.form-row {
+  display: flex;
+  margin-bottom: 16px;
+  gap: 48px;
+}
+
+.form-item {
+  font-weight: 200;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+input:focus {
+  box-shadow: 0px 0px 10px blue;
+  outline: 2px solid blue;
+} 
+
+input:invalid {
+  background-color: ivory;
+  border: none;
+  outline: 2px solid red;
+}
+
+.buttons-container {
+  display: flex;
+  padding-left: 32px;
+  padding-top: 28px;
+  & button {
+    padding: 8px 40px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 3px 3px 3px lightgray;
+    background-color: #596d48 ;
   }
 }
